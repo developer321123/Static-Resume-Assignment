@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Arial', sans-serif;
+}
+
+.resume {
+    max-width: 800px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #0077cc;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contact, .links {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.links a {
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #0077cc;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: #0077cc;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 2px;
+}
+
+.job h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.job p {
+    font-size: 0.9em;
+    color: #888;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+ul li {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.skills, .education, .languages {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Add a subtle animation for section titles */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section {
+    animation: slideIn 0.6s ease-in-out;
+}
